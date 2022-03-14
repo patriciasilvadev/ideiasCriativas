@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+/* Reset CSS*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f1f1f4;
+    color: #27273E;
+}
+a {
+    color: #FF00AA;
+    text-decoration: none;
+    padding: 10px;
+}
+button {
+    background: linear-gradient(to right,  #FF00AA, #9C42F5 , #5D2DE1);
+    
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+
+/* Container */
+#containner {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;    
+}
+/* Intro */
+#intro {
+    width: 40%;
+    padding: 10px; 
+    flex: 1;  
+}
+/* Ideas */
+#ideas {
+    width: 60%;
+    padding: 10px;    
+}
+.lastideas {
+    background-color: #ffffff;
+    box-shadow: 10px 10px 5px #e2e2e9;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #e2e2e9;
+}
+/* Container responsive */
+@media only screen and (max-width: 500px) {
+    #containner {
+        display: flex;
+        flex-direction: column;      
+    }
+    #intro, #ideas {
+        width: 90%;
+    }
+  }
+
+/* modal */
+#modal {
+    background: #f1f1f4;
+    position: absolute;
+    top: 0;
+    
+    
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal .content {
+    margin-top: 10px;
+    color:#27273E;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 5px #e2e2e9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid#e2e2e9;
+    
+}
+
+#modal .content h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+#modal form {
+    
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+
+
+}
+.input-whapper {
+    margin: 10px 0;
+}
+
+
+
+form input, form textarea {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #f1f1f4;
+}
+form button {
+   
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form a {
+    padding: 10px;
+}
+#modal.hide {
+    display: none;
+}

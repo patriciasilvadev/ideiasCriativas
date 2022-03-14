@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ideias Criativas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+
+    <body>
+
+        <!-- Containner -->
+        <div id="containner">
+
+            <section id="intro">
+                <h1>Ideias Criativas</h1>                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio aspernatur nihil architecto nesciunt a distinctio quae. Odit eaque sit porro quisquam deleniti accusantium accusamus possimus eum, minus, velit non!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio aspernatur nihil architecto nesciunt a distinctio quae. Odit eaque sit porro quisquam deleniti accusantium accusamus possimus eum, minus, velit non!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio aspernatur nihil architecto nesciunt a distinctio quae. Odit eaque sit porro quisquam deleniti accusantium accusamus possimus eum, minus, velit non!</p>
+                <button onclick="onOff()">Adicionar Ideias</button>
+                <button>Ver Ideias</button>
+                <p>Com amor<a href="https://github.com/patriciasilvadev">Patrícia Silva</a></p>
+            </section>
+
+            <section id="ideas">
+                <div class="lastideas">
+                    <h2>Titulo da Ideia</h2>
+                    <p>Categoria</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste aliquam eos odio maiores! Totam consequuntur dolore, similique beatae dolorum eaque dignissimos ea atque exercitationem quibusdam commodi distinctio, pariatur delectus accusamus!</p>
+                    <a href="">Ir para a ideia</a>
+                </div>
+                <div class="lastideas">
+                    <h2>Titulo da Ideia</h2>
+                    <p>Categoria</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste aliquam eos odio maiores! Totam consequuntur dolore, similique beatae dolorum eaque dignissimos ea atque exercitationem quibusdam commodi distinctio, pariatur delectus accusamus!</p>
+                    <a href="">Ir para a ideia</a>
+                </div>
+            </section>
+
+        </div>        
+
+        <!-- modal -->
+        <div id="modal" class="hide">
+            <div class="content">
+                <h1>Nova Ideia</h1>
+
+                <form action="">
+
+                    <div class="input-whapper">
+                        <label for="title">titulo da Ideia</label>
+                        <input type="text" name="title">
+                    </div>
+
+                    <div class="input-whapper"> 
+                        <label for="category">categoria</label>
+                        <input type="text" name="category">
+                    </div> 
+
+                    <div class="input-whapper">
+                        <label for="imagem">Link da Imagem</label>
+                        <input type="url" name="imagem">
+                    </div>
+
+                    <div class="input-whapper">
+                        <label for="description">titulo da Ideia</label>
+                        <textarea name="description" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="input-whapper">
+                        <label for="Link">Link da Ideia</label>
+                        <input type="url" name="link">
+                    </div>   
+                    
+                    
+                    <button>Salvar</button>
+                    <a href="#" onclick="onOff()">Voltar</a>
+
+                </form>
+            </div>
+        </div>
+
+
+
+        
+
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
